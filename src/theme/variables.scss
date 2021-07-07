@@ -11,10 +11,6 @@ $font-path: "../assets/fonts";
 // http://ionicframework.com/docs/theming/rtl-support/
 $app-direction: ltr;
 
-
-@import "ionic.globals";
-
-
 // Shared Variables
 // --------------------------------------------------
 // To customize the look and feel of this app, you can override
@@ -89,22 +85,6 @@ $colors: ( // Ionic default variables made to fit app
 // so that the above variables are used and Ionic's
 // default are overridden.
 
-@import "ionic.theme.default";
-
-
-// Ionicons
-// --------------------------------------------------
-// The premium icon font for Ionic. For more info, please see:
-// http://ionicframework.com/docs/ionicons/
-
-@import "ionic.ionicons";
-
-
-// Fonts
-// --------------------------------------------------
-
-@import "roboto";
-@import "noto-sans";
 
 $custom-header-height : 56px;
 
