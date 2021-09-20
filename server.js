@@ -3,11 +3,11 @@ const express = require('express');
 const app = express();
 
 // Serve static files
-app.use(express.static(__dirname + '/src/kunder-exam-frontend'));
+app.use(express.static(__dirname + '/dist/kunder-exam-frontend'));
 
 // Send all requests to index.html
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/src/kunder-exam-frontend/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/kunder-exam-frontend/index.html'));
 });
 
 // default Heroku port
