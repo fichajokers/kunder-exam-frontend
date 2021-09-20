@@ -11,15 +11,15 @@
     </div>  
 </div>
 
-<div *ngIf="showPlan" class="backgroundImg d-flex h-100" [style.background]="'url(' + productBanner?.backgroundImg + ')'">
-    <div class="row justify-content-center align-items-center">
+<div *ngIf="showPlan" class="backgroundImg" [style.background]="'url(' + productBanner?.backgroundImg + ')'">  
+    <div class="row justify-content-center align-items-center" style="height: 100%;">
         <div class="col-8">
             <div class="productDescription">{{productBanner?.productDescription}}</div>
         </div>
         <div class="col-4">
             <button class="button" class="btn btn-info buttonText" (click)="goLink(productBanner?.link)">{{productBanner?.buttonText}}</button>
         </div>
-    </div>      
+    </div>  
 </div>
 
 
