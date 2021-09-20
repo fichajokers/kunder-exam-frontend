@@ -1,14 +1,8 @@
-const path = require('path');
 const express = require('express');
-const app = express();
-
-// Serve static files
-app.use(express.static(__dirname + '/dist/kunder-exam-frontend'));
-
-// Send all requests to index.html
-app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/dist/kunder-exam-frontend/index.html'));
+const path = require('path');
+const ngApp = express();
+ngApp.use(express.static('./dist/kunder-exam-frontend'));
+ngApp.get('/*', function (request, response) {
+    response.sendFile(path.join(__dirname, '/dist/kunder-exam-frontend/index.html'));
 });
-
-// default Heroku port
-app.listen(process.env.PORT || 5000);
+ngApp.listen(process.env.PORT || 8080);
