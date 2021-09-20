@@ -1,0 +1,35 @@
+.backgroundImg{
+    position: relative;
+    height: 32.9vh;
+    width: 100%;
+    background-size: cover !important;
+  }
+
+.productImg{
+  height: 32vh;
+  display: block;
+  margin: auto;
+}
+
+.productDescription{
+    font-size: 2.3vh;
+    color: black;
+    font-weight: 900;
+    -webkit-text-stroke: 0.1px #bfbfbf;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.buttonText{
+  width: 80%;
+  margin-left: 10%;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.productName{
+  text-align: center;
+  font-size: 3vh;
+  font-weight: 900;
+  font-family: sans-serif;
+}

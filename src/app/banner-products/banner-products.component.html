@@ -1,0 +1,27 @@
+<div *ngIf="showCellphone" class="backgroundImg" [style.background]="'url(' + productBanner?.backgroundImg + ')'">
+
+    <div class="row justify-content-center align-items-center">
+        <div class="col-6">
+            <img class="productImg" [src]='productBanner?.productImg'>
+        </div>
+        <div class="col-6">
+            <div class="productName">{{productBanner?.productName}}</div>   
+            <div class="productDescription">{{productBanner?.productDescription}}</div> 
+        </div>
+    </div>  
+</div>
+
+<div *ngIf="showPlan" class="backgroundImg d-flex h-100" [style.background]="'url(' + productBanner?.backgroundImg + ')'">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-8">
+            <div class="productDescription">{{productBanner?.productDescription}}</div>
+        </div>
+        <div class="col-4">
+            <button class="button" class="btn btn-info buttonText" (click)="goLink(productBanner?.link)">{{productBanner?.buttonText}}</button>
+        </div>
+    </div>      
+</div>
+
+
+
+

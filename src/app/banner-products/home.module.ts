@@ -3,13 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { HomePageComponent } from './home.component';
-import { BannerProductsComponent } from '../../banner-products/banner-products.component'; 
+import { BannerProductsComponent } from 'app/banner-products/banner-products.component'
 
 
 @NgModule({
   imports: [
-    HomePageRoutingModule,
-    CommonModule
+    HomePageRoutingModule
   ],
   declarations: [HomePageComponent,BannerProductsComponent],
   providers: []
